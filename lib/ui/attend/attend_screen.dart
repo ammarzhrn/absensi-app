@@ -47,7 +47,7 @@ class _AttendScreenState extends State<AttendScreen> {
       backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.grey[900],
         leading: IconButton(
           icon: const Icon(Icons.arrow_back_ios, color: Colors.white),
           onPressed: () => Navigator.of(context).pop(),
@@ -71,12 +71,12 @@ class _AttendScreenState extends State<AttendScreen> {
             children: [
               Container(
                 height: 50,
-                decoration: const BoxDecoration(
-                  borderRadius: BorderRadius.only(
+                decoration: BoxDecoration(
+                  borderRadius: const BorderRadius.only(
                     topLeft: Radius.circular(10),
                     topRight: Radius.circular(10),
                   ),
-                  color: Colors.blueAccent,
+                  color: Colors.grey[900],
                 ),
                 child: const Row(
                   children: [
@@ -118,7 +118,7 @@ class _AttendScreenState extends State<AttendScreen> {
                   child: DottedBorder(
                     radius: const Radius.circular(10),
                     borderType: BorderType.RRect,
-                    color: Colors.blueAccent,
+                    color: Colors.grey,
                     strokeWidth: 1,
                     dashPattern: const [5, 5],
                     child: SizedBox.expand(
@@ -128,9 +128,9 @@ class _AttendScreenState extends State<AttendScreen> {
                           File(image!.path),
                           fit: BoxFit.cover,
                         )
-                            : const Icon(
-                          Icons.camera_enhance_outlined,
-                          color: Colors.blueAccent,
+                            : Icon(
+                          Icons.photo_camera,
+                          color: Colors.grey[900],
                         ),
                       ),
                     ),
@@ -153,11 +153,11 @@ class _AttendScreenState extends State<AttendScreen> {
                     const TextStyle(fontSize: 14, color: Colors.black),
                     border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: const BorderSide(color: Colors.blueAccent),
+                      borderSide: const BorderSide(color: Colors.grey),
                     ),
                     enabledBorder: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(10),
-                      borderSide: const BorderSide(color: Colors.blueAccent),
+                      borderSide: const BorderSide(color: Colors.grey),
                     ),
                   ),
                 ),
@@ -183,7 +183,7 @@ class _AttendScreenState extends State<AttendScreen> {
                       alignLabelWithHint: true,
                       disabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(10),
-                        borderSide: const BorderSide(color: Colors.blueAccent),
+                        borderSide: const BorderSide(color: Colors.grey),
                       ),
                       hintText: 'Your Location',
                       hintStyle:
@@ -197,7 +197,7 @@ class _AttendScreenState extends State<AttendScreen> {
               isLoading
                   ? const Center(
                 child:
-                CircularProgressIndicator(color: Colors.blueAccent),
+                CircularProgressIndicator(color: Colors.grey),
               )
                   : Padding(
                 // Added const here for potential optimization
@@ -212,7 +212,7 @@ class _AttendScreenState extends State<AttendScreen> {
                         disabledBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(10),
                           borderSide:
-                          const BorderSide(color: Colors.blueAccent),
+                          const BorderSide(color: Colors.grey),
                         ),
                         hintText: strAddress.isNotEmpty
                             ? strAddress
@@ -239,7 +239,7 @@ class _AttendScreenState extends State<AttendScreen> {
                     ),
                     child: Material(
                       borderRadius: BorderRadius.circular(20),
-                      color: Colors.blueAccent,
+                      color: Colors.grey[900],
                       child: InkWell(
                         splashColor: Colors.blue,
                         borderRadius: BorderRadius.circular(20),

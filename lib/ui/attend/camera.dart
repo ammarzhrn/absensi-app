@@ -74,7 +74,7 @@ class _CameraScreenState extends State<CameraScreen> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.grey[900],
         leading: IconButton(
           onPressed: () {
             Navigator.of(context).pop();
@@ -133,9 +133,9 @@ class _CameraScreenState extends State<CameraScreen> {
                     padding: EdgeInsets.only(top: 20),
                     child: ClipOval(
                       child: Material(
-                        color: Colors.blueAccent,
+                        color: Colors.grey[900],
                         child: InkWell(
-                          splashColor: Colors.blue,
+                          splashColor: Colors.grey[900],
                           onTap: () async {
                             final hasPermission =
                             await handleLocationPermission();

@@ -20,7 +20,7 @@ class _AttandanceHistoryScreenState extends State<AttandanceHistoryScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
+        backgroundColor: Colors.grey[900],
         elevation: 0,
         leading: IconButton(
           onPressed: () {
